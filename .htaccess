@@ -1,11 +1,5 @@
 RewriteEngine On
 
-RewriteBase /php_e-library/
-
-RewriteCond %{REQUEST_FILE_NAME} !/(css|public)/
-
-
-
 RewriteCond %{REQUEST_FILE_NAME} !-d
 RewriteCond %{REQUEST_FILE_NAME} !-f
 

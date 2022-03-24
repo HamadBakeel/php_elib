@@ -1,19 +1,21 @@
 <?php
+include "DB.php";
 class App{
 
     public $controller='home';
     public $method='index';
     public $parameters=[];
+
     function __construct()
     {
-       
+       $db = new Database();
         $urlParts=explode('/',$_GET['url']);
         //        print_r($urlParts);
        
         if(file_exists("app/controllers/".$urlParts[0].".php")){
           $this->controller=$urlParts[0];  
           unset($urlParts[0]);
-
+        
         }
 
        // print_r($urlParts);
@@ -21,7 +23,7 @@ class App{
 
 
     $c=new $this->controller;
-    print_r($c);
+
     
 
    if(isset($urlParts[1])&& method_exists($c,$urlParts[1])){
@@ -30,7 +32,7 @@ class App{
      $this->parameters=array_values($urlParts);
    }
 
-//    call_user_func_array([$c,$this->method],$this->parameters);
+    call_user_func_array([$c,$this->method],$this->parameters);
 
         
 
