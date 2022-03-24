@@ -15,6 +15,6 @@
     <title>Document</title>
 </head>
 <body>
-   <div class="username"><?php echo "user view page" ?></div>
+   <div class="username"><?php echo $data ?></div> 
 </body>
 </html>
