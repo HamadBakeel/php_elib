@@ -40,7 +40,6 @@ class Users extends Controller
                    'name'=>$userName,
                    'password'=>md5($password),
                    'email'=>$email
-                   
                );
                $u=$this->model('user');
                $message="";
@@ -48,7 +47,6 @@ class Users extends Controller
                    $type='success';
                     $message="user created successful";
                     $this->view('feedback',array('type'=>$type,'message'=>$message));
-
                 }
                else {
                    $type='danger';
@@ -71,7 +69,6 @@ class Users extends Controller
     { $users=$this->model("user");
         $result=$users->select();
         $this->view('users_table',$result);
-
     }
     function status($id){
     $user=$this->model("user");
@@ -79,8 +76,5 @@ class Users extends Controller
         $this->list_all();
 
 //        header('location:users/list_all');
-
-
-        
     }
 }

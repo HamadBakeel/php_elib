@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="app/views/public/css/normalize.css" type="text/css" >
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" >
 
-    <link rel="stylesheet" href="app/views/public/css/signUpDialog.css" type="text/css" type="text/css">
-    <link rel="stylesheet" href="app/views/public/css/loginDialog.css"  type="text/css">
-    <link rel="stylesheet" href="app/views/public/css/style.css"  type="text/css">
-    <link rel="stylesheet" href="http://localhost/php_e-library/app/views/public/css/all.min.css"  type="text/css">
+    <link rel="stylesheet" href="assets/css/signUpDialog.css" type="text/css" type="text/css">
+    <link rel="stylesheet" href="assets/css/loginDialog.css"  type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css"  type="text/css">
+<!--    <link rel="stylesheet" href="http://localhost/php_e-library/app/views/public/css/all.min.css"  type="text/css">-->
 <!--    <link rel="stylesheet" href="app/views/public/css/cart.css" type="text/css">-->
-    <link rel="stylesheet" href="http://localhost/php_e-library/app/views/public/css/cart.css" type="text/css">
+<!--    <link rel="stylesheet" href="http://localhost/php_e-library/app/views/public/css/cart.css" type="text/css">-->
+    <link href="assets/css/cart.css?<?=  filemtime( $_SERVER['DOCUMENT_ROOT'] . "/assets/css/cart.css" )  ?>" type="text/css" rel="stylesheet" />
 
     <style>
 
@@ -21,7 +22,7 @@
   <body>
 <div class="cart-container">
       <div class="cart-head">
-        <img src="public/imgs/svg/cart.svg" alt=""/>
+        <img src="assets/imgs/svg/cart.svg" alt=""/>
         <h2>السلة</h2>
         <p class="items-number">(3منتجات)</p>
       </div>
@@ -30,7 +31,7 @@
           <div class="cart-item">
             <div class="item-head">
               <div class="title">
-                <img src="public/imgs/books/beYou.jpg" alt="" />
+                <img src="assets/imgs/books/beYou.jpg" alt="" />
                 <p class="name">كن انت (كتاب إالكتروني)</p>
                 <p>منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير</p>
               </div>
@@ -140,7 +141,7 @@
               بالضغط على "إنهاء التسوق فانت توافق على
               <a href="">الشروط والاحكام وسياسة الخصوصية</a>
             </p>
-            <a href="checkout.html" class="finish-shopping">إنهاء التسوق</a>
+            <a href="checkout.php" class="finish-shopping">إنهاء التسوق</a>
           </div>
         </div>
       </div>

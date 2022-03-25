@@ -94,7 +94,7 @@ languageSwitch.addEventListener("click", function (e) {
 const offers = document.querySelectorAll(".current-offers .offer > img");
 offers.forEach(function (offer) {
   offer.addEventListener("click", function () {
-    location.href = "details.html";
+    location.href = "details.php";
   });
 });
 

@@ -159,7 +159,7 @@
 
         <div style="position: relative">
           <span id="counter"></span>
-          <a href="cart.html"> </a>
+          <a href="cart.php"> </a>
           <object data="imgs/svg/cart.svg" class="cart" type=""></object>
         </div>
       </div>

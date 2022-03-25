@@ -1,7 +1,7 @@
 <?php
 require_once 'controller.php';
 
-class Categoires extends Controller
+class Categories extends Controller
 {
     public function __construct()
     {
