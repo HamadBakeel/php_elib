@@ -6,7 +6,7 @@ const progressNumbers = 4;
 function handleNextStep() {
   if (progress == 4) {
     localStorage.clickcount = 0;
-    location.href = "index.html";
+    location.href = "home.php";
   } else {
     steps[progress].classList.add("active");
     for (let i = 0; i < progressNumbers; i++) {

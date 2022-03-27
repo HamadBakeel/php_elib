@@ -94,19 +94,19 @@ languageSwitch.addEventListener("click", function (e) {
 const offers = document.querySelectorAll(".current-offers .offer > img");
 offers.forEach(function (offer) {
   offer.addEventListener("click", function () {
-    location.href = "details.php";
+    location.href = "details";
   });
 });
 
-// =========== redirect to index.html ==============
+// =========== redirect to home.php ==============
 const mainPage = document.querySelector(".index");
 mainPage.addEventListener("click", function (e) {
   e.preventDefault();
-  location.href = "index.html";
+  location.href = "home.php";
 });
 
 const logoRedirect = document.querySelector(".search-bar .img");
 logoRedirect.addEventListener("click", function (e) {
   e.preventDefault();
-  location.href = "index.html";
+  location.href = "home.php";
 });

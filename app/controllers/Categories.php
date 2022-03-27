@@ -5,6 +5,7 @@ class Categories extends Controller
 {
     public function __construct()
     {
+
         $this->view('categories');
     }
 }

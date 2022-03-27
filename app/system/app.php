@@ -11,11 +11,9 @@ class App{
        $db = new Database();
         $urlParts=explode('/',$_GET['url']);
         //        print_r($urlParts);
-       
         if(file_exists("app/controllers/".$urlParts[0].".php")){
-          $this->controller=$urlParts[0];  
+          $this->controller=$urlParts[0];
           unset($urlParts[0]);
-        
         }
 
        // print_r($urlParts);
@@ -32,7 +30,7 @@ class App{
      $this->parameters=array_values($urlParts);
    }
 
-    call_user_func_array([$c,$this->method],$this->parameters);
+//    call_user_func_array([$c,$this->method],$this->parameters);
 
         
 

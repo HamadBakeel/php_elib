@@ -4,7 +4,7 @@ class Home extends Controller{
 
     function __construct()
     {
-        $this->view('register');
+        $this->view('home');
     }
 
     function index(){

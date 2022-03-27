@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" >
 
-    <link rel="stylesheet" href="assets/css/signUpDialog.css" type="text/css" type="text/css">
-    <link rel="stylesheet" href="assets/css/loginDialog.css"  type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css"  type="text/css">
-<!--    <link rel="stylesheet" href="http://localhost/php_e-library/app/views/public/css/all.min.css"  type="text/css">-->
-<!--    <link rel="stylesheet" href="app/views/public/css/cart.css" type="text/css">-->
-<!--    <link rel="stylesheet" href="http://localhost/php_e-library/app/views/public/css/cart.css" type="text/css">-->
-    <link href="assets/css/cart.css?<?=  filemtime( $_SERVER['DOCUMENT_ROOT'] . "/assets/css/cart.css" )  ?>" type="text/css" rel="stylesheet" />
+      <link rel="stylesheet" href="app/views/assets/css/normalize.css"  type="text/css">
+      <link rel="stylesheet" href="app/views/assets/css/all.min.css"  type="text/css">
+      <link rel="stylesheet" href="app/views/assets/css/cart.css"  type="text/css">
+      <link rel="stylesheet" href="app/views/assets/css/style.css"  type="text/css">
+      <link rel="stylesheet" href="app/views/assets/css/signUpDialg.css"  type="text/css">
+      <link rel="stylesheet" href="app/views/assets/css/loginDialog.css"  type="text/css">
 
-    <style>
-
-    </style>
   </head>
   <body>
-<div class="cart-container">
+  <?php include_once 'components/header.php'?>
+
+  <div class="cart-container">
       <div class="cart-head">
-        <img src="assets/imgs/svg/cart.svg" alt=""/>
+        <img src="app/views/assets/imgs/svg/cart.svg" alt=""/>
         <h2>السلة</h2>
         <p class="items-number">(3منتجات)</p>
       </div>
@@ -31,7 +28,7 @@
           <div class="cart-item">
             <div class="item-head">
               <div class="title">
-                <img src="assets/imgs/books/beYou.jpg" alt="" />
+                <img src="app/views/assets/imgs/books/beYou.jpg" alt="" />
                 <p class="name">كن انت (كتاب إالكتروني)</p>
                 <p>منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير</p>
               </div>
@@ -51,7 +48,7 @@
               <input type="number" name="" class="amount"  />
             </div>
             <button class="delete-button">
-              <img src="imgs/svg/cancel (3).svg" alt="" />
+              <img src="app/views/assets/imgs/svg/cancel (3).svg" alt="" />
               احذف
             </button>
           </div>
@@ -59,7 +56,7 @@
           <div class="cart-item">
             <div class="item-head">
               <div class="title">
-                <img src="imgs/books/karmaDiagnosis.jpg" alt="" />
+                <img src="app/views/assets/imgs/books/karmaDiagnosis.jpg" alt="" />
                 <p class="name">تشخيص الكارما (كتاب إالكتروني)</p>
                 <p>منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير</p>
               </div>
@@ -79,7 +76,7 @@
               <input type="number" name="" class="amount"  />
             </div>
             <button class="delete-button">
-              <img src="imgs/svg/cancel (3).svg" alt="" />
+              <img src="app/views/assets/imgs/svg/cancel (3).svg" alt="" />
               احذف
             </button>
           </div>
@@ -87,7 +84,7 @@
           <div class="cart-item">
             <div class="item-head">
               <div class="title">
-                <img src="imgs/books/fullSelfTrust.jpg" alt="" />
+                <img src="app/views/assets/imgs/books/fullSelfTrust.jpg" alt="" />
                 <p class="name">الثقة الكاملة بالنفس (كتاب إالكتروني)</p>
                 <p>منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير</p>
               </div>
@@ -107,7 +104,7 @@
               <input type="number" name="" class="amount" id="" />
             </div>
             <button class="delete-button">
-              <img src="imgs/svg/cancel (3).svg" alt="" />
+              <img src="app/views/assets/imgs/svg/cancel (3).svg" alt="" />
               احذف
             </button>
           </div>
@@ -141,118 +138,15 @@
               بالضغط على "إنهاء التسوق فانت توافق على
               <a href="">الشروط والاحكام وسياسة الخصوصية</a>
             </p>
-            <a href="checkout.php" class="finish-shopping">إنهاء التسوق</a>
+            <a href="checkout" class="finish-shopping">إنهاء التسوق</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ------------------- footer ------------------- -->
-    <footer>
-      <section class="upper-part">
-        <section class="posts">
-          <div>
-            <h3>انضم الى نشرتنا البريدية</h3>
-            <form action="">
-              <input type="search" placeholder="ادخل بريدك الالكتروني" />
-              <input type="submit" value="اشتراك" />
-            </form>
-          </div>
-          <div class="contact-us">
-            <h3>تواصل معنا</h3>
-            <div class="social-icons">
-              <img src="imgs/social-icons/facebook.svg" alt="" />
-              <img src="imgs/social-icons/twitter.svg" alt="" />
-              <img src="imgs/social-icons/youtube.svg" alt="" />
-              <img src="imgs/social-icons/youtube.svg" alt="" />
-              <img src="imgs/social-icons/linkedin.svg" alt="" />
-              <img src="imgs/social-icons/snapshat.svg" alt="" />
-              <img src="imgs/social-icons/tictok.svg" alt="" />
-            </div>
-          </div>
-        </section>
+<?php include_once 'components/footer.php'?>
 
-        <ul class="custumer-services">
-          <h3>خدمةالعملاء</h3>
-          <li><a href=""> مبيعات الشركات</a></li>
-          <li><a href="">الاسئلة المتكررة</a></li>
-          <li><a href="">دليل التسوق والمطبوعات</a></li>
-          <li><a href="">مواقع المعارض</a></li>
-          <li><a href="">سياسة الضمان</a></li>
-          <li><a href="">سياسة الاسترجاع والاستبدال</a></li>
-          <p class="call-us">
-            اتصل بنا <br />
-            92090232323
-          </p>
-        </ul>
-
-        <ul class="services">
-          <h3>خدمات جرير</h3>
-          <li><a href=""> خدمات تقسيط تقسيط المشتريات</a></li>
-          <li><a href="">خدمات ما بعد البيع</a></li>
-          <li><a href="">خدمات الحمايه الشاملة</a></li>
-          <li><a href="">حماية أجهزة آبل</a></li>
-          <li><a href="">بطاقة خصم جرير</a></li>
-          <li><a href="">بطاقة جرير للهدايا</a></li>
-        </ul>
-
-        <ul class="quick-links">
-          <h3>روابط سريعه</h3>
-          <li><a href="">اصدارات جرير</a></li>
-          <li><a href="">قارئ جرير</a></li>
-          <li><a href="">شركاء برامج المكافئات </a></li>
-          <li><a href="">خدمات شركات الاتصال</a></li>
-        </ul>
-
-        <ul class="about">
-          <h3>عن جرير</h3>
-          <li><a href="">من نحن</a></li>
-          <li><a href="">الحوكمه</a></li>
-          <li><a href="">علاقات المستثمرين و التقارير</a></li>
-          <li><a href="">الاستدامه</a></li>
-          <li><a href="">الاخبار</a></li>
-          <h3><a href="">فرص العمل</a></h3>
-        </ul>
-      </section>
-      <section class="lower-part">
-        <div class="text">
-          <p><a href="">سياسة الخصوصية </a> <a href="">| شروط الخدمة</a></p>
-          <p>
-            جميع الحقوق محفوظة لمكتبة جرير 2015 س.ت.1011120120. اونلاين
-            س.ت.1010987453
-          </p>
-        </div>
-        <div class="pay-methods">
-          <div class="img">
-            <img src="imgs/paymentMethods/payInGallery.svg" alt="" />
-          </div>
-          <div class="img">
-            <img
-              src="imgs/paymentMethods/qitaf.svg"
-              class="white-card"
-              alt=""
-            />
-          </div>
-          <div class="img"> <img src="imgs/paymentMethods/mada.svg" class="white-card"
-          style="padding: 8px 3px" alt="" />
-        </div>
-        <div class="img">
-          <img src="imgs/paymentMethods/visa.svg" alt="" />
-        </div>
-        <div class="img">
-          <img src="imgs/paymentMethods/masterCard.svg" alt="" />
-        </div>
-        <div class="img">
-          <img
-            src="imgs/paymentMethods/americanExpress.svg"
-            style="background-color: #27ade4; border-radius: 5px"
-            alt=""
-          />
-        </div>
-        </div>
-      </section>
-    </footer>
-
-    <script src="Js/main.js"></script>
+<script src="app/views/assets/Js/main.js"></script>
   </body>
 </html>
